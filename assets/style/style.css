@@ -110,3 +110,16 @@ a {
     background-color: #cccccc;
     border: 7px solid #ffffff;
 }
+
+/* Контакты и записаться */
+
+.appointment-item input {
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+    border-color: #663d15;    
+}
