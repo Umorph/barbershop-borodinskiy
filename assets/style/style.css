@@ -44,3 +44,16 @@ a {
 .user-navigation a:focus {
     background-color: #242424;
 }
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
