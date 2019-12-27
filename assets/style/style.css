@@ -157,6 +157,8 @@ a {
     color: #aba9a7;
 }
 
+/* Фильтр товаров */
+
 .filter fieldset {
     border: none;
 }
@@ -180,6 +182,77 @@ a {
     color: #000000;
 
     opacity: 0.5;
+}
+
+/* Карточки товаров */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item h3 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-category {
+    text-transform: none;
+}
+
+.catalog-item-price b {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagonation-item a {
+    color: #ffffff;
+
+    background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #663d15;
+}
+
+.pagination-item-current a {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+
+    background-color: #ffffff;
 }
 
 /* Футер */
@@ -243,7 +316,7 @@ a {
 }
 
 .login-form input[type="text"],
-.login-form input[type="passsword"] {
+.login-form input[type="password"] {
     font: inherit;
     color: #000000;
     text-transform: uppercase;
