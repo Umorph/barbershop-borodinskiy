@@ -379,12 +379,25 @@ a {
 /* Футер */
 
 .main-footer {
+    padding: 60px 0;
+    margin-top: 65px;
+
     color: #ffffff;
 
     background-color: #212121;
     background-image: url("../img/pattern-dark.jpg");
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -398,6 +411,8 @@ a {
 }
 
 .footer-social {
+    width: 145px;
+
     text-align: center;
 }
 
@@ -410,6 +425,10 @@ a {
 }
 
 .footer-copyright {
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+
     text-align: center;
 }
 
