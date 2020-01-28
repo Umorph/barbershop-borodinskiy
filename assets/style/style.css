@@ -451,6 +451,10 @@ a {
     background-repeat: repeat;
 }
 
+.inner-page .main-footer {
+    margin-top: 45px;
+}
+
 .main-footer .container {
     display: flex;
 }
