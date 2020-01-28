@@ -74,6 +74,12 @@ a {
     margin-bottom: 75px;
 }
 
+.inner-page .main-header {
+    margin-bottom: 50px;
+
+    background-color: #000000;
+}
+
 .main-navigation {
     display: flex;
     flex-direction: column;
@@ -84,10 +90,23 @@ a {
     color: #ffffff;
 }
 
+.inner-page .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 .main-header-logo {
     order: 2;
     width: 368px;
     height: 153px;
+}
+
+.inner-page .main-header-logo {
+    order: 0;
+
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -116,6 +135,10 @@ a {
     padding: 0;
 
     list-style: none;
+}
+
+.inner-page .user-navigation {
+    margin-left: auto;
 }
 
 .site-navigation a,
