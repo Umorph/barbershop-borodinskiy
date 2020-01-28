@@ -404,6 +404,10 @@ a {
 
 /* Карточка товара */
 
+.product-photos {
+    width: 460px;
+}
+
 .product-photo-preview {
     list-style: none;
 }
@@ -426,6 +430,10 @@ a {
     text-align: center;
 
     background-color: #e5e5e5;
+}
+
+.product-info {
+    width: 390px;
 }
 
 .product-info h3 {
