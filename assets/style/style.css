@@ -156,12 +156,13 @@ a {
     line-height: 42px;
 }
 
-/* Блок новрсти + галерея */
+/* Блок новости + галерея */
 
 .index-columns {
     display: flex;
     justify-content: space-between;
     padding: 50px 80px;
+    margin-bottom: 35px;
 
     color: #000000;
 
@@ -198,6 +199,14 @@ a {
 }
 
 /* Контакты и записаться */
+
+.contants {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
+}
 
 .appointment-item input {
     font: inherit;
