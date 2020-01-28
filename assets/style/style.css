@@ -1,5 +1,11 @@
 /* Глобальные стили */
 
+html,
+body {
+    min-width: 1122px;
+    min-height: 1750px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,20 +54,60 @@ a {
     background-color: #663d15;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 /* Шапка header */
 
+.main-header {
+    margin-bottom: 75px;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+}
+
+.main-header-logo {
+    order: 2;
+    width: 368px;
+    height: 153px;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
 
     background-color: #000000;
 }
 
-.main-navigation,
-.user-navigation {
-    list-style: none;
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.site-navigation {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 .site-navigation a,
