@@ -42,8 +42,11 @@ img {
 }
 
 .button {
-    font: inherit;
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 30px;
 
+    font: inherit;
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -57,6 +60,13 @@ img {
 .button:focus,
 .button:active {
     background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
 }
 
 .container {
@@ -264,12 +274,17 @@ input[type="radio"].visually-hidden {
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url("../img/pattern-light.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
+    background-image:
+        url("../img/line.png"),
+        url("../img/pattern-light.jpg");
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+    margin: 0;
+    margin-bottom: 25px;
+
     font-size: 30px;
     line-height: 42px;
 }
@@ -279,7 +294,19 @@ input[type="radio"].visually-hidden {
 }
 
 .news-list {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+
     list-style: none;
+}
+
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item p {
+    margin: 0;
 }
 
 .news-item time {
@@ -290,9 +317,40 @@ input[type="radio"].visually-hidden {
     width: 300px;
 }
 
+.gallery-container {
+    position: relative;
+
+    height: 260px;
+}
+
 .gallery-content {
+    height: 164px;
+    margin: 0;
+
     background-color: #cccccc;
     border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery-button {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back {
+    left: 0;
+}
+
+.gallery-button-next {
+    right: 0;
 }
 
 /* Контакты и записаться */
