@@ -224,8 +224,33 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3 {
+    position: relative;
+
+    margin: 0;
+    margin-bottom: 60px;
+
     font-size: 30px;
     line-height: 42px;
+}
+
+.feature-item h3::after {
+    content: "";
+
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+}
+
+.feature-item p {
+    margin: 0 10px;
 }
 
 /* Блок новости + галерея */
