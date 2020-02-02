@@ -492,22 +492,104 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
     border: none;
 }
 
+.filter fieldset:first-child {
+    margin-bottom: 35px;
+}
+
 .filter legend {
+    margin-bottom: 26px;
+
     font-size: 24px;
     line-height: 30px;
 }
 
 .filter ul {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
     line-height: 18px;
+}
+
+.filter-option {
+    margin-bottom: 19px;
+    padding-left: 45px;
+}
+
+.filter-option label {
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
 }
 
 .filter-input:hover + label,
 .filter-input:focus + label {
     color: #663d25;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000000;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: -38px;
+
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../svg/cross.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+
+    position: absolute;
+    left: -42px;
+    top: -1px;
+
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: -36px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    border-radius: 50%;
 }
 
 .filter-input:disabled + label {
