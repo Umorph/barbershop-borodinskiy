@@ -664,11 +664,40 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+
     list-style: none;    
 }
 
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+}
+
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+
     color: #ffffff;
+    background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    fill: #000000;
 }
 
 .footer-copyright {
@@ -677,6 +706,16 @@ input[type="radio"].visually-hidden {
     margin-left: auto;
 
     text-align: center;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 0;
 }
 
 .footer-copyright .button:hover,
