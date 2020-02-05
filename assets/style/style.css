@@ -1179,13 +1179,6 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal-show {
-    display: block;
-
-    animation: bounce;
-    animation-duration: 0.6s;
-}
-
 .modal-error {
     animation: shake;
     animation-duration: 0.6s;
@@ -1369,5 +1362,24 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-map p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
     margin: 0;
+}
+
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce;
+    animation-duration: 0.6s;
 }

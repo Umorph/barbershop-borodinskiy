@@ -103,7 +103,7 @@
                     <br> пн—пт: с 10:00 до 22:00
                     <br> сб—вс: с 10:00 до 19:00
                 </p>
-                <a class="button" href="map.html">Как проехать</a>
+                <a class="button js-button-map" href="map.html">Как проехать</a>
                 <a class="button" href="contacts.html">Обратная связь</a>
             </section>
             <section class="appointment">
@@ -195,10 +195,11 @@
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CKQjQL1X" width="766" height="560" frameborder="1" allowfullscreen="true"></iframe>
         <p>
             <img src="assets/img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close modal-map-close" type="button">Закрыть</button>
     </section>
     <script src="assets/script/modal.js"></script>
 </body>
