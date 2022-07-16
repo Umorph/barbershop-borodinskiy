@@ -1,3 +1,2 @@
-Тренировочный макет барбершопа, созданный в рамках интенсива "Профессиональный онлайн‑курс HTML и CSS, уровень 1" 
-от HTML Academy.
-https://htmlacademy.ru/
+# BARBERSHOP-Release
+Project Barbershop "Borodinski"
